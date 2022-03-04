@@ -1,0 +1,7 @@
+.discord, .twitter, .opensea {
+    max-width: 30px;
+    max-height: auto;
+    vertical-align: middle;
+    margin-left: 10px;
+    margin-right: 10px;
+}

@@ -4,6 +4,7 @@ import { connect } from "./redux/blockchain/blockchainActions";
 import { fetchData } from "./redux/data/dataActions";
 import * as s from "./styles/globalStyles";
 import styled from "styled-components";
+import './App.css';
 
 const truncate = (input, len) =>
   input.length > len ? `${input.substring(0, len)}...` : input;
@@ -153,17 +154,37 @@ function App() {
   };
 
   const decrementMintAmount = () => {
-    let newMintAmount = mintAmount - 1;
-    if (newMintAmount < 1) {
-      newMintAmount = 1;
+    let newMintAmount = mintAmount;
+    switch (mintAmount) {
+      case 10:
+        newMintAmount = 5;
+        break;
+      case 5:
+        newMintAmount = 3;
+        break;
+      case 3:
+        newMintAmount = 1
+        break;
+      default:
+        // do nothing
     }
     setMintAmount(newMintAmount);
   };
 
   const incrementMintAmount = () => {
-    let newMintAmount = mintAmount + 1;
-    if (newMintAmount > 10) {
-      newMintAmount = 10;
+    let newMintAmount = mintAmount;
+    switch (mintAmount) {
+      case 1:
+        newMintAmount = 3;
+        break;
+      case 3:
+        newMintAmount = 5;
+        break;
+      case 5:
+        newMintAmount = 10
+        break;
+      default:
+        // do nothing
     }
     setMintAmount(newMintAmount);
   };
@@ -367,6 +388,11 @@ function App() {
               </>
             )}
             <s.SpacerMedium />
+            <div className="socials">
+              <a href="https://discord.gg/azukiduckbp" target="_blank" rel="noopener noreferrer"><img className="discord" src="discord.png"/></a>
+              <a href="https://twitter.com/AzukiDuckBP" target="_blank" rel="noopener noreferrer"><img className="twitter" src="twitter.png"/></a>
+              <a href="https://opensea.io" target="_blank" rel="noopener noreferrer"><img className="opensea" src="opensea.png"/></a>
+            </div>
           </s.Container>
           <s.SpacerLarge />
           <s.Container flex={1} jc={"center"} ai={"center"}>
