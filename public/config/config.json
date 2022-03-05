@@ -1,18 +1,18 @@
 {
-  "CONTRACT_ADDRESS": "0x827acb09a2dc20e39c9aad7f7190d9bc53534192",
-  "SCAN_LINK": "https://polygonscan.com/token/0x827acb09a2dc20e39c9aad7f7190d9bc53534192",
+  "CONTRACT_ADDRESS": "0xBc06F7A24463FB416ECB06ad542dDB3edB5F70c4",
+  "SCAN_LINK": "https://etherscan.io/address/0xBc06F7A24463FB416ECB06ad542dDB3edB5F70c4",
   "NETWORK": {
     "NAME": "Ethereum",
     "SYMBOL": "Eth",
     "ID": 1
   },
-  "NFT_NAME": "Azuki Ducks",
-  "SYMBOL": "DUCK",
+  "NFT_NAME": "Zuki Ducks",
+  "SYMBOL": "AZDS",
   "MAX_SUPPLY": 6969,
   "WEI_COST": 6900000000000000,
   "DISPLAY_COST": 0.0069,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "Opensea",
-  "MARKETPLACE_LINK": "https://opensea.io/collection/AzukiDucks",
+  "MARKETPLACE_LINK": "https://opensea.io/collection/zuki-ducks",
   "SHOW_BACKGROUND": true
 }

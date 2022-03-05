@@ -1,8 +1,11 @@
 :root {
-  --primary: #ebc908;
-  --primary-text: #1a1a1a;
-  --secondary: #ee00ee00;
-  --secondary-text: #cdffd0;
-  --accent: #070a09ec;
-  --accent-text: #f8f8f8;
+  --primary: #e94a4a;
+  --primary-text: #b4faaa;
+  --secondary: #ff3b3b;
+  --secondary-text: #26cf31;
+  --accent: #000000e1;
+  --accent-text: #e8f15f;
+  --new-text: #58f12a;
+  --buttonz: #18a5c9;
+  --buttonshadow: #fc5e52;
 }
